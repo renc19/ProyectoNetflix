@@ -1,0 +1,22 @@
+{% extends "AppNetflix/base.html" %}
+{% load static %}
+
+{% block infoPelicula %}
+<header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+                <div class="my-5 text-center text-xl-start">
+                    <h1 class="display-5 fw-bolder text-white mb-2">{{ pelicula.nombre }}</h1>
+                    <p class="lead fw-normal text-white-50 mb-4">{{ pelicula.descripcion }}</p>
+                    <p class="lead fw-normal text-white-50 mb-4">Género: {{ pelicula.genero }}</p>
+                    <p class="lead fw-normal text-white-50 mb-4">Duración: {{ pelicula.duracion }}</p>
+                </div>
+            </div>
+            <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="{% static pelicula.portada.url %}" alt="{{ pelicula.nombre }}" /></div>
+        </div>
+    </div>
+</header>
+<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'Peliculas' %}">Volver a las Películas</a></div>
+<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'PeliculasYSeries' %}">Volver a las Películas y Series</a></div>
+{% endblock %}
