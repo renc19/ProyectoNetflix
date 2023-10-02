@@ -33,3 +33,8 @@ Existen dos imagenes que se utilizan:
     Portada: se mostrará la portada en el respectivo template que contenga la información de la película o serie.
         Preferiblemente debe tener un tamaño de 1000x1500 pixeles.
         Se debe guardar en el directorio: "...\ProyectoNetflix\AppNetflix\static\AppNetflix\assets\img\portadas"
+
+
+
+Pre-entrega nro 3 de Renzo Compagnoni
+Python CODERHOUSE
