@@ -1,0 +1,19 @@
+{% extends "AppNetflix/base.html" %}
+{% load static %}
+
+{% block agregarPelicula %}
+<h2>Agregar Película</h2>
+{% if form.errors %}
+<p style="color:red">Están mal los datos, revisar.</p>
+{% endif %}
+
+<form action="{% url 'AgregarPelicula' %}" method="POST" enctype="multipart/form-data">{% csrf_token %}
+       
+    <table>
+        {{ form.as_table }}
+    </table>
+        
+    <input type="submit" value="Enviar">
+</form>
+
+{% endblock %}

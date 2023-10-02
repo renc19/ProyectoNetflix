@@ -1,0 +1,12 @@
+{% extends "AppNetflix/base.html" %}
+{% load static %}
+
+{% block agregarPeliculaSerie %}
+<div class="text-center">
+  <h1>¿Qué desea agregar?</h1>
+</div>
+<div class="text-center">
+  <a class="btn btn-outline-dark" href="{% url 'AgregarPelicula' %}">Película</a>
+  <a class="btn btn-outline-dark" href="{% url 'AgregarSerie' %}">Serie</a>
+</div>
+{% endblock %}
